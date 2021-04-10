@@ -1,3 +1,4 @@
+
 h1 {
     color: white;
     background-color: black;
@@ -6,10 +7,10 @@ h1 {
     padding: 10px;
     text-decoration: none;
 }
-.body{
+body {
     text-align: center
 }
-header{
+header {
     display: block;
     background-color: beige;
     height: 550px;
@@ -20,7 +21,7 @@ header{
     top: 0;
     margin-top: -200px
 }
-a{
+a {
     font-family: ;
     color:
 
