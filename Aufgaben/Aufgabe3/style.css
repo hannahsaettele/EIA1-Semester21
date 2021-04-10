@@ -18,13 +18,13 @@ header {
     top: 0;
     margin-top: -200px
 }
-#headline{
+#headline {
     padding-top: 150px;
     color: rosybrown(255, 255, 0.774);
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#Navi{
+#Navi {
     padding-top: 150px;
     color: rosybrown(4, 167, 167);
     margin-left: 490px;
@@ -46,7 +46,7 @@ nav {
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
 }
-#headname{
+#headname {
     color: rgba(255, 255, 255, 0.774);
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
