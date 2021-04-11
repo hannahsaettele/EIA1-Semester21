@@ -109,11 +109,11 @@ textarea {
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
-form-button {
+.form-button {
     background-color: rosybrown;
     border: none;
 }
-form-button:hover {
+.form-button:hover {
     background-color: lightpink;
     color: rosybrown;
 }
