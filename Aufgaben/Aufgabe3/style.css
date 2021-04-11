@@ -11,7 +11,7 @@ background {
 }
 .header {
     display: block;
-    background-color: rgb(252, 249, 250);
+    background-color: rgb(235, 199, 211);
     height: 550px;
     width: 800px;
     border-bottom-right-radius: 400px;
@@ -55,10 +55,10 @@ background {
     background-color: seashell;
 }
 #aktuell{
-    color: rgb(241, 155, 169);
+    color: rgb(224, 129, 185);
 }
 #headname {
-    color: rgb(241, 155, 169);
+    color: rgb(224, 129, 185);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 240px;
