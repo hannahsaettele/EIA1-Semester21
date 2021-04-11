@@ -52,13 +52,19 @@
 .Nav{
     background-color: rosybrown;
 }
+.Nav:hover {
+    background-color: seashell;
+}
+#aktuell{
+    color: pink;
+}
 #headname {
     color: pink;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 240px;
     margin-top: -120px;
-h1 {
+#h1 {
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
