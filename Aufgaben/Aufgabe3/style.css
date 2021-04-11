@@ -1,5 +1,10 @@
+.background {
+    background-image: url(bg.png);
+    background-repeat: repeat;
+    background-size: 30px;
+}
 .body {
-    background-image: -moz-linear-gradient();
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     max-width: 800px;
     margin: auto;
@@ -34,14 +39,14 @@
     border-bottom-left-radius: 10px;
 }
 .Nav {
-    text-decoration: seashell;
-    background-color: rosybrown;
+    text-decoration: rosybrown;
+    background-color: seashell;
     height: 10px;
     width: 10px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 .Nav{
@@ -55,7 +60,6 @@
     margin-top: -120px;
 h1 {
     color: white;
-    background-color: black;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
@@ -64,5 +68,47 @@ h1 {
 a {
     font-family: ;
     color:
+}
+
+form {
+    width: fit-content;
+    padding: 20px 20px;
+}
+
+.form-text {
+    background-color:seashell;
+    width: 200px; 
+    height: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+textarea {
+    background-color: seashell;
+    width: 200px; height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+#submitting {
+    color: seashell;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.form-button {
+    background-color: rosybrown;
+    border: none;
+}
+
+.form-button:hover {
+    background-color: seashell;
+    color: rosybrown;
 }
     
