@@ -75,6 +75,9 @@ a {
     font-family: ;
     color:
 }
+.main { color: grey;
+
+}
 form {
     width: fit-content;
     padding: 20px 20px;
