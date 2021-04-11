@@ -23,7 +23,7 @@
 }
 #headline {
     padding-top: 150px;
-    color: rosybrown(255, 255, 0.774);
+    color: rosybrown;
     font-size: 150px;
     font-family: Arial, Helvetica, sans-serif;
 }
