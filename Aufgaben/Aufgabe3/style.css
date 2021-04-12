@@ -82,6 +82,7 @@ body {
  div { color: grey;
 }
 form {
+    text-align: left;
     width: fit-content;
     padding: 20px 20px;
 }
