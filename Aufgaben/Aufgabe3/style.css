@@ -118,7 +118,7 @@ textarea {
     background-color: lightpink;
     color: rosybrown;
 }
-.footer {
+footer {
     text-decoration: rosybrown;
     background-color: seashell;
     height: 10px;
@@ -130,7 +130,7 @@ textarea {
     border-radius: 10px;
 
 }
-.footer:hover {  
+footer:hover {  
     background-color: seashell;
 }
 
