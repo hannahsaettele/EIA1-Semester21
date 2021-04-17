@@ -118,7 +118,11 @@ textarea {
     background-color: lightpink;
     color: rosybrown;
 }
-#back {
+footer{
+    position: relative;
+    top: 5px;
+    right: 0px;
+    display: block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
