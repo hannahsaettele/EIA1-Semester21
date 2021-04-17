@@ -14,6 +14,7 @@
 .wrapper .text {
     padding: 30px;
     margin: auto; 
+    text-align: center;
 }
 h1 {
     color: white;
@@ -21,3 +22,29 @@ h1 {
     font-size: 30px;
     margin-bottom: 35px;
     text-align: left;
+}
+.shells {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: (-50%);
+}
+.Muschel {
+    display: inline;
+    position: relative;
+    padding-right: 25px;
+}
+.Muschel :hover img[alt="Muschel"] {
+    opacity: 0%;
+}
+.Muschel img[alt="Muschel"], .Muschel img[alt="Perle"] {
+    transition-duration: 0.3s;
+}
+.Muschel img[alt="Perle"] {
+    position: absolute;
+    left: 0;
+    opacity: 0%;
+}
+.Muschel:hover img[alt="Perle"] {
+    opacity: 100%;
+}
