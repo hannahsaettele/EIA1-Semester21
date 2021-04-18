@@ -29,22 +29,22 @@ h1 {
     left: 50%;
     transform: (-50%);
 }
-.Muschel {
+.single_shells {
     display: inline;
     position: relative;
     padding-right: 25px;
 }
-.Muschel :hover img[alt="Muschel"] {
+.single_shells :hover img[alt="Muschel"] {
     opacity: 0%;
 }
-.Muschel img[alt="Muschel"], .Muschel img[alt="Perle"] {
+.single_shells img[alt="Muschel"], .single_shells img[alt="Perle"] {
     transition-duration: 0.3s;
 }
-.Muschel img[alt="Perle"] {
+.single_shells img[alt="Perle"] {
     position: absolute;
     left: 0;
     opacity: 0%;
 }
-.Muschel:hover img[alt="Perle"] {
+.single_shells:hover img[alt="Perle"] {
     opacity: 100%;
 }
