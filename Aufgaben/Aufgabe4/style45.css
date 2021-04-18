@@ -1,0 +1,28 @@
+body{
+    background-image: url(bg5.png);
+    background-repeat: repeat;
+    background-size: auto;
+}
+.wrapper {
+    background-image: url(wrapperbg5.png);
+    width: 600px; height: 400px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+.bow{
+
+    position: absolute;
+     text-align: center;
+     top: 60%;
+     right: 30.5%; 
+ }
