@@ -25,8 +25,8 @@ h1 {
 }
 .shells {
     position: absolute;
-    bottom: 20%;
-    left: 50%;
+    bottom: 100px;
+    left: 150px;
     transform: (-50%);
 }
 .single_shells {
