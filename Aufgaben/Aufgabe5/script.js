@@ -1,9 +1,9 @@
 var country1 = "Afrika";
-var country2 = "Europa";
-var country3 = "Südamerica";
-var country4 = "Nordamerica";
-var country5 = "Asien";
-var country6 = "Australien";
+var europa = "Europa";
+var südamerica = "Südamerica";
+var nordamerica = "Nordamerica";
+var asien = "Asien";
+var australien = "Australien";
 var country1_2008 = 1028;
 var country2_2008 = 4965.7;
 var country3_2008 = 1132.6;
@@ -18,4 +18,5 @@ var country4_2018 = 6035.6;
 var country5_2018 = 16274.1;
 var country6_2018 = 2100.5;
 var wholeWorld2018 = Math.round(country1_2018 + country2_2018 + country3_2018 + country4_2018 + country5_2018 + country6_2018 * 100) / 100;
+console.log("Die Emission von " + country1 + " ist: " + country1_2018 + " kg CO2");
 //# sourceMappingURL=script.js.map
