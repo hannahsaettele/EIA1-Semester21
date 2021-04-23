@@ -27,7 +27,8 @@ h1 {
     position: absolute;
     bottom: 100px;
     left: 150px;
-    transform: (-50%);
+    transform: (
+        -50%);
 }
 .single_shells {
     display: inline;
