@@ -36,18 +36,19 @@ var emissionnordamerika = Math.round(nordamerika18 - nordamerika08 * 100) / 100;
 var emissionasien = Math.round(asien18 - asien08 * 100) / 100;
 var emissionaustralien = Math.round(australien18 - australien08 * 100) / 100;
 
-function continent(continentName: string, continentValue2008: number, continentValue2018: number){
-    continentValue
+function emissions(continentName: string, continentValue2008: number, continentValue2018: number){
 
-
-
-    document.querySelector("#titleregion").innerHTML;
+    document.querySelector("#titleRegion").innerHTML = continent;
+    document.querySelector("#region2018").innerHTML = continent .tostring();
+    document.querySelector("#regionRelative").innerHTML = continent;
+    document.querySelector("#").innerHTML = continent;
+    document.querySelector("#").innerHTML = continent;
 
 }
 
-document.querySelector('.europa').addEventListener('click', function () )
-document.querySelector('.afrika').addEventListener('click', function () )
-document.querySelector('.südamerika').addEventListener('click', function () )
-document.querySelector('.nordamerika').addEventListener('click', function () )
-document.querySelector('.asien').addEventListener('click', function () )
-document.querySelector('.australien').addEventListener('click', function () )
+document.querySelector('.europa').addEventListener('click', function () ) {emissions (emissioneuropa + europa08 + europa18) });
+document.querySelector('.afrika').addEventListener('click', function () ) {emissions (emissionafrika + afrika08 + afrika18) });
+document.querySelector('.südamerika').addEventListener('click', function () ) {emissions (emissionsüdamerika + südamerika08 + südamerika18)}
+document.querySelector('.nordamerika').addEventListener('click', function () ) {emissions (emissionnordamerika + nordamerika08 + nordamerika18)}
+document.querySelector('.asien').addEventListener('click', function () ) {emissions (emissionasien + asien08 + asien18)}
+document.querySelector('.australien').addEventListener('click', function () ) {emissions (emissionaustralien + australien08 + australien18)}
