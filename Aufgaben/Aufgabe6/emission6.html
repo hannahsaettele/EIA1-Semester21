@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Emission Values</title>
+    <title>Carbon Dioxide Emissions - EIA1 Task #5</title>
     <link rel="stylesheet" href="style6.css">
-    <script src="script6.js"></script>
+    <script src="script6.js">defer</script>
 </head>
 <body>
     <nav>
@@ -17,15 +17,22 @@
         <img src="images/asia.png" class="asia">
         <img src="images/australia.png" class="australia">
     </nav>
+
     <h1>
-        Carbon Dioxide Emissions in Europe
+        Carbon Dioxide Emissions in <span id="titleRegion">Europe</span>
     </h1>
+
+            
+    <div class="chartWrapper">
+        <div class="chart"></div>
+    </div>
+    
     <main>
         <section>
             <h2>4209.3</h2>
             <p>Emission absolute of Europe in 2018</p>
         </section>
-
+        
         <section>
             <h2>4%</h2>
             <p>Relative to total world's emission</p>
@@ -44,6 +51,7 @@
 
     <footer>
         <p>Values in kg CO2 per TJ. Source https://www.statista.com/</p>
-    </footer>    
+    </footer>
+    
 </body>
 </html>
