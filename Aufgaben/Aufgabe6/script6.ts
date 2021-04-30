@@ -3,6 +3,7 @@ window.addEventListener ('load', function() {
 });
 var europa18: number = 4209.3;
 var europa08: number = 4965.7;
+
 var afrika18: number = 1235.5;
 var afrika08: number = 1028;
 var südamerika18: number = 1261.5;
@@ -45,7 +46,6 @@ function emissions(continentName: string, continentValue2008: number, continentV
     document.querySelector("#").innerHTML = continent;
 
 }
-
 document.querySelector('.europa').addEventListener('click', function () ) {emissions (emissioneuropa + europa08 + europa18) });
 document.querySelector('.afrika').addEventListener('click', function () ) {emissions (emissionafrika + afrika08 + afrika18) });
 document.querySelector('.südamerika').addEventListener('click', function () ) {emissions (emissionsüdamerika + südamerika08 + südamerika18)}
