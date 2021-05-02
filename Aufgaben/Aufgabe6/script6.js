@@ -10,28 +10,28 @@ var asien18 = 16274.1;
 var asien08 = 12954.7;
 var australien18 = 1993;
 var australien08 = 2100.5;
-var world = europa18 + afrika18 + südamerika18 + nordamerika18 + asien18 + australien18;
-var cEuropa = "Europa";
-var cAfrika = "Afrika";
-var cSüdAmerika = "Südamerika";
-var cNordAmerika = "Nordamerika";
-var cAsien = "Asien";
-var cAustralien = "Australien";
+var world = europa18 + afrika18 + südAmerika18 + nordAmerika18 + asien18 + australien18;
+var continentEuropa = "Europa";
+var continentAfrika = "Afrika";
+var continentSüdAmerika = "Südamerika";
+var continentNordAmerika = "Nordamerika";
+var continentAsien = "Asien";
+var continentAustralien = "Australien";
 window.addEventListener('load', function () {
-    document.querySelector('.europe').addEventListener('click', function () { emissions(cEuropa, europa18, europa08); });
-    document.querySelector('.northamerica').addEventListener('click', function () { emissions(cNordAmerika, nordAmerika18, nordAmerika08); });
-    document.querySelector('.southamerica').addEventListener('click', function () { emissions(cSüdAmerika, südAmerika18, südAmerika08); });
-    document.querySelector('.africa').addEventListener('click', function () { emissions(cAfrika, afrika18, afrika08); });
-    document.querySelector('.asia').addEventListener('click', function () { emissions(cAsien, asien18, asien08); });
-    document.querySelector('.australia').addEventListener('click', function () { emissions(cAustralien, australien18, australien08); });
-    function emissions(continent, continent2018, continent2008) {
+    document.querySelector('.europe').addEventListener('click', function () { emissions(continentEuropa, europa18, europa08); });
+    document.querySelector('.northamerica').addEventListener('click', function () { emissions(continentNordAmerika, nordAmerika18, nordAmerika08); });
+    document.querySelector('.southamerica').addEventListener('click', function () { emissions(continentSüdAmerika, südAmerika18, südAmerika08); });
+    document.querySelector('.africa').addEventListener('click', function () { emissions(continentAfrika, afrika18, afrika08); });
+    document.querySelector('.asia').addEventListener('click', function () { emissions(continentAsien, asien18, asien08); });
+    document.querySelector('.australia').addEventListener('click', function () { emissions(continentAustralien, australien18, australien08); });
+    function emissions(continent, continent18, continent08) {
         document.querySelector("#titleRegion").innerHTML = continent;
         document.querySelector("#subtitleRegion").innerHTML = continent;
-        document.querySelector("#c2018").innerHTML = continent2018.toString();
-        document.querySelector("#cRelative").innerHTML = Math.round(continent2018 / world * 100 * 100) / 100 + "%";
-        document.querySelector("#cGrowthRateRel").innerHTML = Math.round((continent2018 - continent2008) / continent2008 * 100 * 100) / 100 + "%";
-        document.querySelector("#cGrowthRateAbs").innerHTML = (Math.round((continent2018 - continent2008) * 100) / 100).toString();
-        document.querySelector(".chartWrapper .chart").setAttribute('style', 'height:' + continent2018 / world * 100 + '%');
+        document.querySelector("#continent2018").innerHTML = continent18.toString();
+        document.querySelector("#cRelative").innerHTML = Math.round(continent18 / world * 100 * 100) / 100 + "%";
+        document.querySelector("#cGrowthRateRel").innerHTML = Math.round((continent18 - continent08) / continent08 * 100 * 100) / 100 + "%";
+        document.querySelector("#cGrowthRateAbs").innerHTML = (Math.round((continent18 - continent08) * 100) / 100).toString();
+        document.querySelector(".chartWrapper .chart").setAttribute('style', 'height:' + continent18 / world * 100 + '%');
         document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in ";
     }
     ;
