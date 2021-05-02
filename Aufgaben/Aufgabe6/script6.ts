@@ -1,6 +1,3 @@
-window.addEventListener ('load', function() {
-    document.querySelector("").addEventListener('click', )
-});
 var europa18: number = 4209.3;
 var europa08: number = 4965.7;
 var afrika18: number = 1235.5;
