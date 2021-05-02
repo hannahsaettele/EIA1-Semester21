@@ -3,52 +3,41 @@ window.addEventListener ('load', function() {
 });
 var europa18: number = 4209.3;
 var europa08: number = 4965.7;
-
 var afrika18: number = 1235.5;
 var afrika08: number = 1028;
-var südamerika18: number = 1261.5;
-var südamerika08: number = 1132.6;
-var nordamerika18: number = 6035.6;
-var nordamerika08: number = 6600.4;
+var südAmerika18: number = 1261.5;
+var südAmerika08: number = 1132.6;
+var nordAmerika18: number = 6035.6;
+var nordAmerika08: number = 6600.4;
 var asien18: number = 16274.1;
 var asien08: number = 12954.7;
 var australien18: number = 1993;
 var australien08: number = 2100.5;
-
 var world = europa18 + afrika18 + südamerika18 + nordamerika18 + asien18 + australien18;
-var relativeuropa = Math.round(europa18 / world * 100 * 100) / 100;
-var relativafrika =  Math.round(afrika18 / world * 100 * 100) / 100;
-var relativsüdamerika = Math.round(südamerika18 / world * 100 * 100) / 100;
-var relativnordamerika = Math.round(nordamerika18 / world * 100 * 100) / 100;
-var relativasien = Math.round(asien18 / world * 100 * 100) / 100;
-var relativaustralien = Math.round(australien18 / world * 100 * 100) / 100;
+var cEuropa: string = "Europa";
+var cAfrika: string = "Afrika";
+var cSüdAmerika: string ="Südamerika";
+var cNordAmerika: string = "Nordamerika";
+var cAsien: string = "Asien";
+var cAustralien: string = "Australien";
 
-var differenzeuropa = Math.round((europa18 - europa08) / europa08 * 100 * 100) / 100;
-var differenzafrika = Math.round((afrika18 - afrika08) / afrika08 * 100 * 100) / 100;
-var differenzsüdamerika = Math.round((südamerika18 - südamerika08) / südamerika08 * 100 * 100) / 100;
-var differenznordamerika = Math.round((nordamerika18 - nordamerika08) / nordamerika08 * 100 * 100) / 100;
-var differenzasien = Math.round((asien18 - asien08) / asien08 * 100 * 100) / 100;
-var differenzaustralien = Math.round((australien18 - australien08) / australien08 * 100 * 100) / 100;
+window.addEventListener('load', function () {
 
-var emissioneuropa = Math.round(europa18 - europa08 * 100) / 100;
-var emissionafrika = Math.round(afrika18 - afrika08 * 100) / 100;
-var emissionsüdamerika = Math.round(südamerika18 - südamerika08 * 100) / 100;
-var emissionnordamerika = Math.round(nordamerika18 - nordamerika08 * 100) / 100; 
-var emissionasien = Math.round(asien18 - asien08 * 100) / 100;
-var emissionaustralien = Math.round(australien18 - australien08 * 100) / 100;
+    document.querySelector('.europe').addEventListener('click', function () { emissions(cEuropa, europa18, europa08) });
+    document.querySelector('.northamerica').addEventListener('click', function () { emissions(cNordAmerika, nordAmerika18, nordAmerika08) });
+    document.querySelector('.southamerica').addEventListener('click', function () { emissions(cSüdAmerika, südAmerika18, südAmerika08) });
+    document.querySelector('.africa').addEventListener('click', function () { emissions(cAfrika, afrika18, afrika08) });
+    document.querySelector('.asia').addEventListener('click', function () { emissions(cAsien, asien18, asien08) });
+    document.querySelector('.australia').addEventListener('click', function () { emissions(cAustralien, australien18, australien08) });
 
-function emissions(continentName: string, continentValue2008: number, continentValue2018: number){
-
-    document.querySelector("#titleRegion").innerHTML = continent;
-    document.querySelector("#region2018").innerHTML = continent .tostring();
-    document.querySelector("#regionRelative").innerHTML = continent;
-    document.querySelector("#").innerHTML = continent;
-    document.querySelector("#").innerHTML = continent;
-
-}
-document.querySelector('.europa').addEventListener('click', function () ) {emissions (emissioneuropa + europa08 + europa18) });
-document.querySelector('.afrika').addEventListener('click', function () ) {emissions (emissionafrika + afrika08 + afrika18) });
-document.querySelector('.südamerika').addEventListener('click', function () ) {emissions (emissionsüdamerika + südamerika08 + südamerika18)}
-document.querySelector('.nordamerika').addEventListener('click', function () ) {emissions (emissionnordamerika + nordamerika08 + nordamerika18)}
-document.querySelector('.asien').addEventListener('click', function () ) {emissions (emissionasien + asien08 + asien18)}
-document.querySelector('.australien').addEventListener('click', function () ) {emissions (emissionaustralien + australien08 + australien18)}
+    function emissions (continent: string, continent2018: number, continent2008: number) {
+        document.querySelector("#titleRegion").innerHTML = continent;
+        document.querySelector("#subtitleRegion").innerHTML = continent;
+        document.querySelector("#c2018").innerHTML = continent2018.toString();
+        document.querySelector("#cRelative").innerHTML = Math.round(continent2018 / world * 100 * 100) / 100 + "%";
+        document.querySelector("#cGrowthRateRel").innerHTML = Math.round((continent2018 - continent2008) / continent2008 * 100 * 100) / 100 + "%";
+        document.querySelector("#cGrowthRateAbs").innerHTML = (Math.round((continent2018 - continent2008) * 100) / 100).toString();
+        document.querySelector(".chartWrapper .chart").setAttribute('style', 'height:' + continent2018 / world * 100 + '%');
+        document.querySelector('#title').innerHTML = "Carbon Dioxide Emissions in ";
+    };
+});
