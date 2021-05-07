@@ -9,7 +9,6 @@ html, body {
     overflow: hidden;
 }
 .drum {
-    width: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,8 +31,6 @@ html, body {
 #soundlaugh button{
     border:orange;
 }
-
-
 footer {
     display: block;
     margin: auto;
