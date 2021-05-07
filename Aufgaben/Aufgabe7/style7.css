@@ -3,18 +3,17 @@ html, body {
     margin: auto;
     height: 100%;
     width: 100%;
-    padding-top: 70px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 .drum {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: inline
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
-.box {
+.drum button {
     width: 150px;
     height: 150px;
     margin: 10px 0;
