@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
     function playSample(samples) {
-        var sound = new Audio('L07_A.mp3');
+        var sound = new Audio('sample');
         sound.play();
     }
     ;
