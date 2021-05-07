@@ -1,0 +1,9 @@
+var sound:HTMLAudioElement = new Audio('L07_A.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_C.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_F.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_G.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_hithat.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_kick.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_laugh-1.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_laugh-2.mp3'); sound.play();
+var sound:HTMLAudioElement = new Audio('L07_snare.mp3'); sound.play();
