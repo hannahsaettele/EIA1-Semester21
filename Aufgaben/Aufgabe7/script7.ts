@@ -3,7 +3,7 @@ function playSample(samples: string): void {
     var sound: HTMLAudioElement = new Audio('sample'); sound.play();
 };
 
-document.querySelector("#kick").addEventListener("mousedown", function (): void { playSample("L07_kick.mp3"); });
+document.querySelector("#kick").addEventListener("mousedown", function (){ playSample("L07_kick.mp3"); });
 document.querySelector("#snare").addEventListener("mousedown", function () { playSample("L07_snare.mp3"); });
 document.querySelector("#hithat").addEventListener("mousedown", function () { playSample("L07_hihat.mp3"); });
 document.querySelector("#noteA").addEventListener("mousedown", function () { playSample("L07_A.mp3"); });
