@@ -1,11 +1,13 @@
 html, body {
     background-color: black;
+    text-align: center;
 }
 .drum {
     margin: auto;
     width: fit-content;
     padding-top: 50px;
     min-width: max-content;
+
 }
 .drum div {
     display: inline;
@@ -35,7 +37,7 @@ html, body {
     border-top-color: #ffefcc;
     border-bottom-color: #a74b00;
 }
-.drumpad img {
+.play img {
     display: block;
     margin: auto;
     margin-top: 20px;
