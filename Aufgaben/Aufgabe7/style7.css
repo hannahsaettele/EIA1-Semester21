@@ -16,20 +16,23 @@ html, body {
     padding: 75px;
     margin: 4px 2px;
     border-width: 2px;
-    border-radius: 4px;
+    border-radius: 10px;
     border-style: solid;
 }
 #soundfun button {
+    border-color: blue;
     background: linear-gradient(0deg, #083499 0%, #5a82e0 100%);
     border-top-color: #5a82e0;
     border-bottom-color: #083499;
 }
 #soundnote button {
+    border-color: crimson;
     background: linear-gradient(0deg, #c40c40 0%, #f383a3 100%);
     border-top-color: #f383a3;
     border-bottom-color: #c40c40;
 }
 #soundlaugh button {
+    border-color: darkgoldenrod;
     background: linear-gradient(0deg, #db6c17 0%, #fced7d 100%);
     border-top-color: #fced7d;
     border-bottom-color: #db6c17;
