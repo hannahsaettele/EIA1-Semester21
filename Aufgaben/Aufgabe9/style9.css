@@ -1,11 +1,16 @@
 html {
-    background-color: rgb(219, 231, 216);
+    background-color: rgb(228, 225, 225);
+    font-family: 'Times New Roman', Times, serif;
 }
 header, body {
     max-width: 500px;
     margin: auto;
 }
-h1, h3 {
+h1 {
+    text-align: center;
+
+}
+h2 {
     text-align: center;
 }
 #toDoList #addToDo, #toDoList li, input{
