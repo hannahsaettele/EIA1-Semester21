@@ -11,6 +11,7 @@ var asien08 = 12954.7;
 var australien18 = 1993;
 var australien08 = 2100.5;
 var world = europa18 + afrika18 + südamerika18 + nordamerika18 + asien18 + australien18;
+// tslint:disable-next-line: typedef
 var relativeuropa = Math.round(europa18 / world * 100 * 100) / 100;
 var relativafrika = Math.round(afrika18 / world * 100 * 100) / 100;
 var relativsüdamerika = Math.round(südamerika18 / world * 100 * 100) / 100;
